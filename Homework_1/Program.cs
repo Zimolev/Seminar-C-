@@ -5,7 +5,7 @@
         //Example2();
         //Example4();
         //Example6();
-        Example8();
+        //Example8();
     }
 /* Задача 2: Напишите программу, 
 которая на вход принимает два числа и выдаёт, 
@@ -53,21 +53,10 @@
         int secondNumber = Convert.ToInt32(Console.ReadLine());
         Console.Write("Третье число: ");
         int thirdNumber = Convert.ToInt32(Console.ReadLine());
-        int max = firstNumber; // max ввел чтобы не зыбыть что ищем максимум, а так это переменная не н
-        if (secondNumber > thirdNumber)
-        {
-            if (secondNumber > max)
-            Console.WriteLine("Максимальное число: " + secondNumber);
-            else
-            Console.WriteLine("Максимальное число: " + max);
-        }
-        else
-        {
-            if (thirdNumber > max)
-            Console.WriteLine("Максимальное число: " + thirdNumber);
-            else
-            Console.WriteLine("Максимальное число: " + max);
-        }
+        int max = firstNumber; 
+        if (secondNumber > max) max = secondNumber;
+        if (thirdNumber > max) max = thirdNumber;
+        Console.Write("Максимум: " + max);
     }
 
     /* Задача 6: Напишите программу, 
