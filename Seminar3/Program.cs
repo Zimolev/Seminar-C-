@@ -58,8 +58,8 @@ static double Task3(int x1, int y1, int x2, int y2)
     и находит расстояние между ними в 2D пространстве.
     */
     {
-        int x = x1 + x2;
-        int y = y1 + y2;
+        int x = x1 - x2;
+        int y = y1 - y2;
         return Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
     }
 
