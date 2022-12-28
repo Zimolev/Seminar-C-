@@ -4,7 +4,8 @@
     {
         Console.WriteLine("Ввидите целое число ");
         int number = Convert.ToInt32(Console.ReadLine());
-        Task23(number);
+        
+        Console.WriteLine(Task19(number));
         //Task21(3, 5, 8, 8, 5, -8);
     }
 
@@ -38,6 +39,15 @@
     и проверяет, является ли оно палиндромом.*/
     static bool Task19(int number)
     {
+        int invertNumber = 0;
+        int recycledNumber = number;
         
+        while (recycledNumber > 0)
+        {
+            invertNumber = invertNumber * 10 + recycledNumber % 10;
+            recycledNumber = recycledNumber / 10;                           
+        }
+        return (invertNumber == number);
+
     }
 }

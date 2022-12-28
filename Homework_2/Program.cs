@@ -7,8 +7,8 @@
         Console.WriteLine("Для задания 15 введите цифру, обозначающую день недели ");
         int number = Convert.ToInt32(Console.ReadLine());
         //Console.WriteLine($"Наша вторая цифра числа {number} это {Task10(number)}");
-        //Task13(number);
-        Task15(number);
+        Task13(number);
+        //Task15(number);
     }
 
     static int Task10(int number)
