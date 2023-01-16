@@ -2,12 +2,14 @@
 {
     private static void Main(string[] args)
     {
-       System.Console.WriteLine("First number");
-       int firstNumber = Convert.ToInt32(Console.ReadLine());
+       //System.Console.WriteLine("First number");
+       //int firstNumber = Convert.ToInt32(Console.ReadLine());
        //System.Console.WriteLine("Second number");
        //int secondNumber = Convert.ToInt32(Console.ReadLine());
        //System.Console.WriteLine(Task25(firstNumber, secondNumber));
-       System.Console.WriteLine(Task27(firstNumber));
+       //System.Console.WriteLine(Task27(firstNumber));
+       Task29();
+
     }
 
     /*Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
@@ -44,6 +46,24 @@
      и выводит их на экран.
      */
     
-    //static void Task29()
+    static void Task29()
+    {
+        System.Console.WriteLine("Ведите размер массива: ");
+        int size = Convert.ToInt32(Console.ReadLine());
+        int[] arrey = new int[size];
+
+        for (int i = 0; i < arrey.Length; i++)
+        {
+            System.Console.WriteLine($"Введите {i + 1} элемет массива: ");
+            arrey[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write(arrey[i] + " ");
+        }
+        Console.WriteLine();
+    }
+    
     
 }
