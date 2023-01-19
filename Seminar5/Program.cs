@@ -69,7 +69,6 @@
             if (array[i] == number) 
             {
                 return true;
-                break;
             }
         }
         return false;
